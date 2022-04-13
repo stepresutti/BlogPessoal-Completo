@@ -79,6 +79,9 @@ public class UsuarioService {
 			return "Basic " + new String(tokenBase64);
 			
 		}
-		
-		
+
+
+	public Optional<Usuario> atualizarUsuario(Usuario usuario) {
+		return null;
+	}
 }

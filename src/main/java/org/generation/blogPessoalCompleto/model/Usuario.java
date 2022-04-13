@@ -45,7 +45,9 @@ public class Usuario {
 		@OneToMany(mappedBy="usuario", cascade=CascadeType.REMOVE)
 		@JsonIgnoreProperties("usuario")
 		private List<Postagem>postagem;
-		
+
+		//Metodos construtores para teste
+		//obrigatorios
 		public Usuario(Long id, String nome, String usuario, String senha, String foto) {
 			this.id = id;
 			this.nome = nome;
@@ -53,7 +55,8 @@ public class Usuario {
 			this.senha = senha;
 			this.foto = foto;
 		}
-		
+
+		//Para instanciar novos objetos em usuarios
 		public Usuario() {}
 		
 		//----getters e setters----
